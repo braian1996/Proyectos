@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<TextView
+		android:text="ORDEN DE SERVICIO"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:gravity="center"
+		android:layout_marginBottom="14.5dp"
+		android:textColor="#ff3fbcef"
+		android:textColorHint="#ff263238"
+		android:shadowColor="#ff304ffe"/>
+	<TextView
+		android:text="Ingrese el numero de la Orden de Servicio:"
+		android:textColor="#000000"
+		android:inputType="number"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility = "gone"
+		android:id="@+id/textView2" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility = "gone"
+		android:backgroundTint="#ff000000"
+		android:id="@+id/edtCodigoOS" />
+	<Button
+		android:text="BUSCAR"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnBuscar" 
+	    android:textColor="#ffffffff" 
+		android:background="@drawable/boton_redondo"
+		android:layout_marginBottom="6.0dp" 
+		android:layout_marginLeft="20.0dp"
+		android:layout_marginRight="20.0dp"/>
+		<ListView
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="450.0dp"
+			android:divider="#ff3fbcef"
+			android:dividerHeight="6px"
+			android:id="@+id/lstOrdenServicio" />
+
+	<Button
+		android:text="GUARDAR"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnGuardar" 
+	    android:textColor="#ffffffff" 
+		android:background="@drawable/boton_redondo"
+		android:layout_marginBottom="9.0dp" 
+		android:layout_marginTop="10.0dp"
+		android:layout_marginLeft="20.0dp"
+		android:layout_marginRight="20.0dp"/>
+	<Button
+		android:text="GENERAR AUDITORIA"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnGenerarAuditoria" 
+	    android:textColor="#ffffffff" 
+		android:background="@drawable/boton_redondo"
+		android:layout_marginBottom="6.0dp" 
+		android:layout_marginLeft="20.0dp"
+		android:layout_marginRight="20.0dp"/>
+		
+</LinearLayout>

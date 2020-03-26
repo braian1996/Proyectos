@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.FrmOS">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30" HorizontalOptions="CenterAndExpand">
+                <Label Text="Gestionar Orden de Sevicio" Font="Bold" Margin="8" FontSize="30"  TextColor="White"/>
+            </StackLayout>
+
+            <Label Text="AREA DE SERVICIO" FontSize="18"></Label>
+            <Picker Margin="0, 20, 0, 5" Title="Area de Servicio" IsEnabled="False">
+                <Picker.Items>
+                    <x:String>Alcantarilla</x:String>
+                    <x:String>Bacheo</x:String>
+                </Picker.Items>
+            </Picker>
+                <Label Text="FECHA DESDE" FontSize="18"></Label>
+                <Entry Margin="0, 20, 0, 5" Placeholder="Fecha desde" ></Entry>
+                <Label Text="FECHA HASTA" FontSize="18"></Label>
+                <Entry Margin="0, 20, 0, 5" Placeholder="Fecha hasta" ></Entry>
+                <Label Text="TIPO DE RECLAMO" FontSize="18"></Label>
+            <Picker Margin="0, 20, 0, 5" Title="Tipo de Reclamo">
+                <Picker.Items>
+                    <x:String>Barrido</x:String>
+                    <x:String>Cortada</x:String>
+                </Picker.Items>
+            </Picker>
+                <Label Text="NUMERO DE ORDEN" FontSize="18"></Label>
+                <Entry Margin="0, 20, 0, 5" Placeholder="Nro Orden" ></Entry>
+                <Label Text="BARRIO" FontSize="18"></Label>
+            <Picker Margin="0, 20, 0, 5" Title="Barrio">
+                <Picker.Items>
+                    <x:String>San Justo</x:String>
+                    <x:String>Santa Ana</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Margin="22" Text="Buscar" x:Name="BtnBuscarOS" Clicked="BtnBuscarOS_Clicked" BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF" StyleClass="Info"  Font="16" FontAttributes="Bold" BorderRadius="9" VerticalOptions="EndAndExpand"></Button>
+         
+        </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

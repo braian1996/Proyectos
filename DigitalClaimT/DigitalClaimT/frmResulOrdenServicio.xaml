@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.frmResulOrdenServicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30">
+                <Label Text="Orden de Sevicio" Font="Bold" Margin="8" FontSize="30" HorizontalOptions="Center" TextColor="White"/>
+            </StackLayout>
+            <StackLayout x:Name="StackGraph" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <!--<oxy:PlotView  VerticalOptions="Center" HorizontalOptions="Center" />-->
+                <Grid x:Name="GridN" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ColumnSpacing="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  />
+                    </Grid.RowDefinitions>
+                    <Label Text="Nº" Grid.Row="0" Grid.Column="0"></Label>
+                    <Label Text="Fecha Creación" Grid.Row="0" Grid.Column="1"></Label>
+                    <Label Text="Fecha Vencimiento" Grid.Row="0" Grid.Column="2"></Label>
+                    <Label Text="Responsable" Grid.Row="0" Grid.Column="3"></Label>
+                    <Label Text="Estado" Grid.Row="0" Grid.Column="4"></Label>
+                   
+                </Grid>
+            </StackLayout>
+            <Button Margin="22" Text="Generar Auditoria" x:Name="btnGenerarAudi" Clicked="BtnGenerarAudi_Clicked" BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF" StyleClass="Info"  Font="16" FontAttributes="Bold" BorderRadius="9" VerticalOptions="EndAndExpand"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

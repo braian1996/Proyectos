@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.frmConfirmarContra">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30">
+                <Label Text="Recuperar Contraseña" Font="Bold" Margin="8" FontSize="30" HorizontalOptions="Center" TextColor="White"/>
+            </StackLayout>
+            <Label Text="Ingrese su Email y le enviaremos instrucciones sobre cómo restablecer su contraseña" FontSize="18"></Label>
+            <Label Text="EMAIL" FontSize="18"></Label>
+            <Entry Margin="0, 20, 0, 5" Placeholder="Ingrese su Email" ></Entry>
+            <Button Margin="22" Text="Enviar"  BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF"  x:Name="BtnEnviarEmail" StyleClass="Info"  Font="16" FontAttributes="Bold" BorderRadius="9" VerticalOptions="Center"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

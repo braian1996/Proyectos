@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="DigitalClaimT.reclamo">
+    <ContentPage x:Name="cpNR" Appearing="CpNR_Appearing" Title="Nuevo Reclamo" >
+        <StackLayout>
+            <maps:Map x:Name="MainMenu" VerticalOptions="Fill" HeightRequest="250"></maps:Map>
+            <Label Text="Ubicación" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+            <Entry Placeholder="Calle" x:Name="txtCalle"  IsEnabled="False"></Entry>
+            <Entry Placeholder="Altura" x:Name="txtAltura" IsEnabled="False"></Entry>
+            <Button Text="Asignar ubicación" VerticalOptions="Center"  x:Name="BtnAsignarUbi" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+            <Label Text="Detalle del reclamo" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand"></Label>
+            <Editor>
+                <Editor.BackgroundColor>
+                </Editor.BackgroundColor>
+            </Editor>
+            <Button Text="Registrar reclamo" VerticalOptions="EndAndExpand"  x:Name="BtnUbiRe" StyleClass="Info" Clicked="BtnUbiRe_Clicked" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+            </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Consultar Reclamo">
+        <StackLayout >
+            <StackLayout Padding="65,65,65,65">
+                 <Label Text="Consultar Reclamo" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <Entry Placeholder="DNI"></Entry>
+            <Entry Placeholder="N° de reclamo" Margin="0, 20, 0, 5" ></Entry>
+            <Button Text="Buscar reclamo" VerticalOptions="CenterAndExpand"  x:Name="BtnBusRecla" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

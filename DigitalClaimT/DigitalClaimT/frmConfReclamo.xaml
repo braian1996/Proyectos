@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.frmConfReclamo">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30">
+                <Label Text="Enviar Reclamo" Font="Bold" Margin="8" FontSize="30" HorizontalOptions="Center" TextColor="White"/>
+            </StackLayout>
+            <StackLayout  >
+                <Label Text="AREA DE SERVICIO" FontSize="18"></Label>
+                <Picker Margin="0, 20, 0, 5" Title="Area de Servicio">
+                    <Picker.Items>
+                        <x:String>Alcantarilla</x:String>
+                        <x:String>Bacheo</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="TIPO DE RECLAMO" FontSize="18"></Label>
+                <Picker Margin="0, 20, 0, 5" Title="Tipo de Reclamo">
+                    <Picker.Items>
+                        <x:String>Barrido</x:String>
+                        <x:String>Cortada</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="BARRIO" FontSize="18"></Label>
+                <Picker Margin="0, 20, 0, 5" Title="Barrio">
+                    <Picker.Items>
+                        <x:String>San Justo</x:String>
+                        <x:String>Parque Norte</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="CALLE" FontSize="18"></Label>
+                <Entry Margin="0, 20, 0, 5" Placeholder="Calle" x:Name="txtCalle"></Entry>
+                <Label Text="ALTURA" FontSize="18"></Label>
+                    <Entry Margin="0, 20, 0, 5" Placeholder="Altura" x:Name="txtAltura"></Entry>
+                <Label Text="OBSERVACIONES" FontSize="18"></Label>
+                <Entry Margin="0, 20, 0, 5" Placeholder="Detalle  el Reclamo" ></Entry>
+            </StackLayout>
+            <Image x:Name="imgFoto"></Image>
+            <Button Margin="22" Text="Enviar"  BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF" StyleClass="Info"  Font="16" FontAttributes="Bold" BorderRadius="9" VerticalOptions="EndAndExpand"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

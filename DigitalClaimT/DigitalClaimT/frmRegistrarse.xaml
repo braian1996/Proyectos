@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.frmRegistrarse">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30">
+                    <Label Text="Crear Cuenta" Font="Bold" Margin="8" FontSize="25" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="DNI" FontSize="17" />
+                    <Entry  x:Name="txtDni"></Entry>
+                    <Label Text="USUARIO" FontSize="17" />
+                    <Entry  x:Name="txtNombre"></Entry>
+                    <Label Text="CONTRASEÑA" FontSize="17" />
+                    <Entry  x:Name="txtContra"></Entry>
+                    <Label Text="CONFIRMAR CONTRASEÑA" FontSize="17" />
+                    <Entry  x:Name="txtConfContra"></Entry>
+                    <Label Text="NOMBRE" FontSize="17" />
+                    <Entry  x:Name="txtNombreU"></Entry>
+                    <Label Text="APELLIDO" FontSize="17" />
+                    <Entry  x:Name="txtApellido"></Entry>
+                    <Label Text="DOMICILIO" FontSize="17" />
+                    <Entry  x:Name="txtDomicilio"></Entry>
+                    <Label Text="ALTURA" FontSize="17" />
+                    <Entry  x:Name="txtAltura"></Entry>
+                    <Label Text="TELEFONO" FontSize="17" />
+                    <Entry  x:Name="txtTelefono"></Entry>
+                    <Label Text="EMAIL" FontSize="17" />
+                    <Entry  x:Name="txtEmail"></Entry>
+                </StackLayout>
+                <Button Margin="22" Text="Crear Cuenta" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnCrearCuenta" StyleClass="Info" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold"  BorderRadius="9" VerticalOptions="EndAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_marginTop="9.0dp"
+			android:layout_height="wrap_content"
+			android:layout_width="120.0dp"
+			android:textStyle="bold"
+			android:textColor="#000000"
+			android:id="@+id/textViewCodigo" />
+		<TextView
+			android:text="Text"
+			android:layout_marginTop="9.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textViewCodigoMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="80.0dp"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textViewFechaAlta" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textViewFechaAltaMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="125.0dp"
+			android:textStyle="bold"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:id="@+id/textViewTipoReclamo" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:id="@+id/textViewTipoReclamoMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="71.0dp"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textViewDireccion" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textViewDireccionMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="58.0dp"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textViewBarrio" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textViewBarrioMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Spinner
+			android:layout_width="200.0dp"
+			android:layout_height="41.5dp"
+			android:layout_marginBottom="40.0dp"
+			android:background="@drawable/spinner_border"
+			android:layout_marginLeft="10.0dp"
+			android:layout_marginRight="10.0dp"
+			android:id="@+id/spnReclamoOrden" />
+		<Button
+			android:text=""
+			android:drawableTop="@drawable/Audi2"
+			android:layout_width="50.0dp"
+			android:layout_height="41.5dp"
+			android:id="@+id/btnAudiRec"
+			android:textColor="#ffffffff"
+			android:background="@drawable/boton_redondo"
+			android:layout_marginTop="25.0dp"
+			android:layout_marginLeft="133.0dp"
+			android:layout_marginRight="10.0dp"/>
+	</LinearLayout>
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="invisible"
+			android:textColor="#000000"
+			android:id="@+id/textViewIdReclamo" />
+	<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewCalle" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewAltura" />
+	<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewIdUsuario" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewidCanal" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewobser" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewIdTipoRec" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewEmail" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewNombre" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewidCalle" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewidBarrio" />
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:textColor="#000000"
+			android:id="@+id/textViewFoto" />
+</LinearLayout>

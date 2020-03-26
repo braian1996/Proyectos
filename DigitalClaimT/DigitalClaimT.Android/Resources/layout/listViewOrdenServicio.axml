@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView
+		android:text="Text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:visibility="gone"
+		android:id="@+id/textViewIdOrdenServicio" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="210.0dp"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:textColor="#000000"
+			android:minHeight="25px"
+			android:id="@+id/tvNOS" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:textColor="#000000"
+			android:minHeight="25px"
+			android:id="@+id/tvNOSMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:textStyle="bold"
+			android:layout_width="80.0dp"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvFechaCreacion" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvFechaCreacionMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="163.0dp"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/tvFechaVenci" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/tvFechaVenciMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="150.0dp"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/tvFechaCierre" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/tvFechaCierreMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Text"
+			android:layout_marginLeft="9.0dp"
+			android:layout_width="150.0dp"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:layout_marginBottom="7.0dp"
+			android:id="@+id/tvObservacion" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:layout_marginBottom="7.0dp"
+			android:id="@+id/tvObservacionMuestra" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Estado: "
+			android:layout_marginLeft="9.0dp"
+			android:textStyle="bold"
+			android:layout_width="60.0dp"
+			android:layout_height="50.5dp"
+			android:textColor="#000000"
+			android:id="@+id/tvEstado" />
+		<Spinner
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/spinner_border"
+			android:layout_marginLeft="10.0dp"
+			android:layout_marginRight="10.0dp"
+			android:id="@+id/spinner1" />
+	</LinearLayout>
+	<TextView
+		android:text=""
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textViewIDORDENtoma" />
+	<Button
+		android:text="VER RECLAMOS"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnLSTorServ" 
+		android:textColor="#ffffffff" 
+		android:background="@drawable/boton_redondo"
+		android:layout_marginBottom="13.0dp"
+		android:layout_marginTop="1.5dp" 
+		android:layout_marginLeft="20.0dp"
+		android:layout_marginRight="20.0dp"/>
+</LinearLayout>

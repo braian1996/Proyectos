@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<Toolbar
+		android:minHeight="?android:attr/actionBarSize"
+		android:background="?android:attr/colorPrimary"
+		android:minWidth="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/toolbar11" >
+		<Button
+			android:text=""
+			android:drawableTop="@drawable/salir"
+			android:layout_width="40.0dp"
+			android:layout_height="40.0dp"
+			android:layout_gravity="right"
+			android:background="?android:attr/colorPrimary"
+			android:id="@+id/btnSalirToolBarLogin" />
+	</Toolbar>
+	<ImageView
+		android:src="@drawable/digitalClaim1"
+		android:layout_width="match_parent"
+		android:layout_height="173.0dp"
+		android:id="@+id/imageView1"
+		android:layout_marginBottom="17.0dp" />
+	 <android.support.design.widget.TextInputLayout
+            android:id="@+id/layoutEdtUsu"
+			android:textColorHint="#ff000000"
+            android:layout_width="fill_parent"
+			android:theme="@style/Theme.AppCompat"
+            android:layout_height="wrap_content" >
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="45.0dp"
+					android:id="@+id/editText1"
+					android:textColorHint="#ff000000"
+				    android:textColor="#000000"
+					android:hint="Nombre de usuario"
+					android:inputType="text"
+					android:singleLine="true"
+					android:layout_marginBottom="15.5dp"
+					android:layout_marginLeft="20.0dp"
+					android:layout_marginRight="20.0dp"
+					android:layout_marginTop="1.0dp"
+					android:backgroundTint="#ff000000" />
+
+		</android.support.design.widget.TextInputLayout>
+	<android.support.design.widget.TextInputLayout
+            android:id="@+id/layoutEdtPassword"
+			android:textColorHint="#ff000000"
+            android:layout_width="fill_parent"
+			android:theme="@style/Theme.AppCompat"
+            android:layout_height="wrap_content" >
+			<EditText
+				android:inputType="textPassword"
+				android:layout_width="match_parent"
+				android:backgroundTint="#ff000000"
+			    android:textColor="#000000"
+				android:layout_height="53.0dp"
+				android:textColorHint="#ff000000"
+				android:singleLine="true"
+				android:id="@+id/editText2"
+				android:hint="Contraseña"
+				android:layout_marginBottom="15.5dp"
+				android:layout_marginLeft="20.0dp"
+				android:layout_marginRight="20.0dp"
+				android:layout_marginTop="1.0dp" />
+	</android.support.design.widget.TextInputLayout>
+	<Button
+		android:text="INGRESAR"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/button1"
+		android:layout_marginBottom="30.0dp"
+		android:textColor="#ffffff"
+		android:background="@drawable/boton_redondo"
+		android:layout_marginLeft="20.0dp"
+		android:layout_marginRight="20.0dp"/>
+	<TextView
+		android:text="¿Has olvidado tu contraseña?"
+		android:textColor="#000000"
+		android:clickable="true"
+	    android:linksClickable="true"
+        android:textColorLink="#52714D"
+		android:autoLink="web"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textViewOlvidasteContra" />
+	<TextView
+		android:text="¿No tienes cuenta? Registrate"
+		android:textColor="#000000"
+		android:clickable="true"
+	    android:linksClickable="true"
+        android:textColorLink="#52714D"
+		android:autoLink="web"
+		android:gravity="center"
+		android:layout_marginTop="230.0dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textViewRegistrarUsuario" />
+</LinearLayout>

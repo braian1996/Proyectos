@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<TextView
+		android:text="CONSULTAR RECLAMO"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1"
+		android:layout_marginBottom="31.0dp"
+		android:textColor="#ff3fbcef"
+		android:textAlignment="center" 
+		android:gravity="center"/>
+	<TextView
+		android:text="Ingrese:"
+		android:layout_width="match_parent"
+		android:textColor="#000000"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:backgroundTint="#ff000000"
+		android:id="@+id/edtNumeroReclamo" />
+	<ListView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:focusable="true"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="#000000"
+		android:dividerHeight="6px"
+		android:id="@+id/listViewCR" />
+</LinearLayout>

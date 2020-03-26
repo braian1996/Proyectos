@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.frCalle">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid x:Name="gridCalle" IsVisible="False">
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Registrar Calle" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                    <Label Text="Nombre de la calle"></Label>
+                    <Entry></Entry>
+                    <Label Text="Descripción:"></Label>
+                    <Entry></Entry>
+                    <Button Text="Guardar Calle" x:Name="BtnGuardarCalle" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+                </StackLayout>
+            </Grid>
+            <Grid x:Name="gridCanal" IsVisible="False">
+                <StackLayout VerticalOptions="Center">
+                    <StackLayout  Padding="0,20,0,5">
+                        <Label Text="Registrar Canal" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                    </StackLayout>
+                    <Label Text="Nombre del canal"></Label>
+                    <Entry></Entry>
+                    <Label Text="Descripción"></Label>
+                    <Entry></Entry>
+                    <Button Text="Guardar Canal" x:Name="BtnGuardarCanal" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+                </StackLayout>
+            </Grid>
+            <Grid x:Name="gridEntidad" IsVisible="False">
+                <StackLayout VerticalOptions="Center">
+                    <StackLayout  Padding="0,20,0,5">
+                        <Label Text="Registrar Entidades" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                    </StackLayout>
+                    <Label Text="Nombre de la entidad:"></Label>
+                    <Entry></Entry>
+                    <Label Text="Cuit:"></Label>
+                    <Entry></Entry>
+                    <Label Text="Calle:"></Label>
+                    <Entry></Entry>
+                    <Label Text="Altura:"></Label>
+                    <Entry></Entry>
+                    <Label Text="Telefono:"></Label>
+                    <Entry></Entry>
+                    <Label Text="E-Mail:"></Label>
+                    <Entry></Entry>
+                    <Button Text="Guardar Entidad" x:Name="BtnGuardarEntidad" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+                </StackLayout>
+            </Grid>
+            <Grid x:Name="gridEstados" IsVisible="False">
+                <StackLayout  Padding="0,20,0,5">
+                    <StackLayout >
+                        <Label Text="Registrar Estados" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                    </StackLayout>
+                    <Label Text="Nombre del estado:"></Label>
+                    <Entry></Entry>
+                    <Label Text="Descripción:"></Label>
+                    <Entry></Entry>
+                    <Button Text="Guardar Estado" x:Name="BtnGuardarEstado" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+                </StackLayout>
+            </Grid>
+            <Grid x:Name="gridPrioridad" IsVisible="False">
+                <StackLayout>
+                    <StackLayout  Padding="0,20,0,5">
+                        <Label Text="Registrar Prioridad" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                    </StackLayout>
+                    <Label Text="Nombre de prioridad"></Label>
+                    <Entry></Entry>
+                    <Label Text="Descripción"></Label>
+                    <Entry></Entry>
+                    <Button Text="Guardar prioridad" x:Name="BtnGuardarPrioridad" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+                </StackLayout>
+            </Grid>
+            <Grid x:Name="gridTemas" IsVisible="False">
+                <StackLayout>
+                    <StackLayout  Padding="0,20,0,5">
+                        <Label Text="Registrar Temas" Font="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                    </StackLayout>
+                    <Label Text="Nombre del Tema"></Label>
+                    <Entry></Entry>
+                    <Label Text="Descripción:"></Label>
+                    <Entry></Entry>
+                    <Button Text="Guardar Tema" x:Name="BtnGuardarTema" StyleClass="Info" BackgroundColor="LightBlue" Font="16" FontAttributes="Bold" BorderColor="Beige" BorderWidth="2" BorderRadius="12"></Button>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

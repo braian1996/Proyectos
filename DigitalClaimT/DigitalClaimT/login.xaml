@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.login"
+             BackgroundColor="White">
+    
+        <StackLayout>
+        <StackLayout BackgroundColor="#343a40" Padding="50,50,50,50">
+            <Image x:Name="img" Source="DigitalClaimT.logo_DigitalClaimLogin.png" WidthRequest="150" HeightRequest="150"/>
+            </StackLayout>
+        <Entry Placeholder="Usuario"  x:Name="txtNombre"  Margin="0, 20, 0, 5"></Entry>
+        <Entry Placeholder="Contraseña"  x:Name="txtContra" IsPassword="True"  Margin="0, 20, 0, 5"></Entry>
+        <Button Text="Ingresar" x:Name="BtnSesion" TextColor="White" StyleClass="Info" Clicked="BtnSesion_Clicked" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold" BorderColor="#1F2532" BorderWidth="1" BorderRadius="9"></Button>
+        <StackLayout Padding="20,20,20,20">
+            <Label
+        Text="¿Has olvidado tu Contraseña?"
+        HorizontalOptions="Center" x:Name="lblLink">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                NumberOfTapsRequired="2" Tapped="LoginTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+        <Button Text="Crear Cuenta" Margin="0,20,0,5" TextColor="White" x:Name="BtnCrearCuenta" StyleClass="Info" Clicked="BtnCrearCuenta_Clicked" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold" BorderColor="#1F2532" BorderWidth="1" BorderRadius="9" VerticalOptions="EndAndExpand"></Button>
+        </StackLayout>
+    
+</ContentPage>

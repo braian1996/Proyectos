@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.PaginaPedidoSoluci">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30">
+                    <Label Text="Consultar Reclamo" Font="Bold" Margin="8" FontSize="25" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+                </StackLayout>
+                <Label Text="MEDIO DE CONSULTA" FontSize="18"></Label>
+                <Picker Margin="0, 20, 0, 5" SelectedIndexChanged="Pmc_SelectedIndexChanged" x:Name="pmc" Title="Seleccione medio de consulta...">
+                    <Picker.Items>
+                        <x:String>Numero De Reclamo</x:String>
+                        <x:String>DNI</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="NUMERO DE RECLAMO" FontSize="18" x:Name="lbl" ></Label>
+                <Entry Margin="0, 20, 0, 5" Placeholder="Numero de Reclamo"  x:Name="txtn" ></Entry>
+                
+                <Button Margin="22" Text="Consultar" x:Name="btnConsultar" BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF" StyleClass="Info"  Font="16" FontAttributes="Bold"  BorderRadius="9" VerticalOptions="Center"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

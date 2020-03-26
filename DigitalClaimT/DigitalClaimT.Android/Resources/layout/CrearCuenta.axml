@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:id="@+id/llcrearCuenta"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:text="REGISTRATE"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginBottom="10.0dp"
+			android:textColor="#ff3fbcef"
+			android:textAlignment="center"
+			android:gravity="center"
+			android:id="@+id/textView1" />
+		<TextView
+			android:text="Nombre de Usuario: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView2" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtNombreUsuario"
+			android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+			android:layout_marginLeft="6.0dp"
+			android:maxLength="20"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaNombreUsuario"
+			android:visibility="invisible" />
+		<TextView
+			android:text="Contraseña: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView3" />
+		<EditText
+			android:inputType="textPassword"
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtContrasena"
+			android:maxLength="25"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaContraseña"
+			android:visibility="invisible" />
+		<TextView
+			android:text="Repetir Contraseña: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView4" />
+		<EditText
+			android:inputType="textPassword"
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtRepetirContrasena"
+			android:maxLength="25"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaRepetirContraseña"
+			android:visibility="invisible" />
+		<TextView
+			android:text="DNI: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView5" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtDni"
+			android:maxLength="8"
+			android:numeric="integer" 
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaDni"
+			android:visibility="invisible" />
+		<TextView
+			android:text="Nombre: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView6" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtNombre"
+			android:maxLength="20"
+			android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaNombre"
+			android:visibility="invisible" />
+		<TextView
+			android:text="Apellido: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView7" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtApellido"
+			android:maxLength="20"
+			android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaApellido"
+			android:visibility="invisible" />
+		<TextView
+			android:text="Telefono: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView11" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtTelefono"
+			android:inputType="phone"
+			android:maxLength="9"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaTelefono"
+			android:visibility="invisible" />
+		<TextView
+			android:text="E-Mail: "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView9" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtEmail"
+			android:inputType="textEmailAddress"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:layout_marginTop="1.0dp"
+			android:backgroundTint="#ff000000" />
+		<TextView
+			android:text="**"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvValidaEmail"
+			android:visibility="invisible" />
+		<TextView
+			android:text="**CAMPO OBLIGATORIO"
+			android:textColor="#FF0800"
+			android:layout_marginLeft="9dp"
+			android:layout_marginBottom="15.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tvCampoObligatorio"
+			android:visibility="invisible" />
+		<Button
+			android:text="CREAR CUENTA"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnCrearCuentaUsu"
+			android:textColor="#ffffff"
+			android:background="@drawable/boton_redondo"
+			android:layout_marginLeft="20.0dp"
+			android:layout_marginRight="20.0dp"/>
+	</LinearLayout>
+</ScrollView>

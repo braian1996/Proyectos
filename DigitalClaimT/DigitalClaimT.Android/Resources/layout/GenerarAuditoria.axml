@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:text="AUDITORIAS"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView1"
+			android:gravity="center"
+			android:layout_marginBottom="14.5dp"
+			android:textColor="#ff3fbcef"
+			android:textColorHint="#ff263238"
+			android:shadowColor="#ff304ffe"/>
+		<TextView
+			android:text="Fecha de Cierre:"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView2" />
+		<TextView
+			android:text=""
+			android:layout_marginBottom="14.5dp"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:textColor="#000000"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textViewFechaMuestraCierre" />
+		<TextView
+			android:text="Observaciones:"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView3" />
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:backgroundTint="#ff000000"
+			android:id="@+id/edtObservaciones" 
+			android:layout_marginBottom="14.5dp"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"/>
+		<ImageView
+			android:src="@android:drawable/ic_menu_gallery"
+			android:layout_width="match_parent"
+			android:layout_height="221.5dp"
+			android:layout_marginBottom="190.5dp"
+			android:id="@+id/imgFotoAuditoria" />
+		<Button
+			android:text="SUBIR FOTO"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnSubirFoto" 
+			  android:textColor="#ffffffff" 
+			android:background="@drawable/boton_redondo"
+			android:layout_marginBottom="6.0dp" 
+			android:layout_marginLeft="9.0dp"
+			android:layout_marginRight="9.0dp"/>
+		<Button
+			android:text="GUARDAR"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnEnviar" 
+			  android:textColor="#ffffffff" 
+			android:background="@drawable/boton_redondo"
+			android:layout_marginBottom="6.0dp" 
+			android:layout_marginLeft="9.0dp"
+			android:layout_marginRight="9.0dp"/>
+	</LinearLayout>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.menudcOS">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="#343a40" Padding="50,50,50,50">
+                <Image x:Name="img" Source="DigitalClaimT.logo_DigitalClaimLogin.png" WidthRequest="150" HeightRequest="150"/>
+            </StackLayout>
+            <Button Text="Gestionar Orden de Sevicio" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnOS" StyleClass="Info" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold"   BorderRadius="9" ></Button>
+            <Button Text="Auditoria" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnAudito" StyleClass="Info" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold"   BorderRadius="9" IsVisible="False"></Button>
+            <StackLayout >
+                <Image x:Name="imgAbajo" Source="DigitalClaimT.FondoMenu.PNG" VerticalOptions="EndAndExpand"  WidthRequest="820" HeightRequest="820"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

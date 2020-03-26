@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.frmConsultarReclamo">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30">
+                <Label Text="Consultar Reclamo" Font="Bold" Margin="8" FontSize="25" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            </StackLayout>
+            <StackLayout x:Name="StackGraph" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <!--<oxy:PlotView  VerticalOptions="Center" HorizontalOptions="Center" />-->
+                <Grid x:Name="GridN" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="45"/>
+                        <RowDefinition  Height="45"/>
+                        <RowDefinition  Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Nº Reclamo" FontAttributes="Bold" FontSize="15" Grid.Row="0" Grid.Column="0" ></Label>
+                    <Label Text="      Tipo de Reclamo" Grid.Row="1" Grid.Column="0" ></Label>
+                    <Label Text="                     Area de Servicio" Grid.Row="1" Grid.Column="1"></Label>
+                    <Label Text="      Estado" Grid.Row="2" Grid.Column="0"></Label>
+                    <Label Text="                     Fecha Alta" Grid.Row="2" Grid.Column="1"></Label>
+
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

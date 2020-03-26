@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.menudc">
+
+        <StackLayout>
+        <StackLayout BackgroundColor="#343a40" Padding="50,50,50,50">
+            <Image x:Name="img" Source="DigitalClaimT.logo_DigitalClaimLogin.png" WidthRequest="150" HeightRequest="150"/>
+        </StackLayout>
+        <Button Text="Enviar Reclamo" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnR" BackgroundColor="#3FBCEF" Clicked="BtnR_Clicked" StyleClass="Info"  Font="16" FontAttributes="Bold" BorderRadius="9"></Button>
+        <Button Text="Consultar Reclamo" BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF" x:Name="BtnPediSolu" Clicked="BtnPediSolu_Clicked" StyleClass="Info"  Font="16" FontAttributes="Bold"   BorderRadius="9"></Button>
+        <Button Text="Notificaciones" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnAd" BackgroundColor="#3FBCEF" StyleClass="Info" Clicked="BtnAd_Clicked" Font="16" FontAttributes="Bold"   BorderRadius="9" ></Button>
+        <Button Text="Configuración" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnU" StyleClass="Info" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold"   BorderRadius="12" ></Button>
+        <Button Text="Gestionar Orden de Sevicio" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnOServicio" Clicked="BtnOServicio_Clicked" StyleClass="Info" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold"   BorderRadius="9" ></Button>
+        <Button Text="Auditoria" BorderColor="#1F2532" TextColor="White" BorderWidth="1" Clicked="BtnAudito_Clicked" x:Name="BtnAudito" StyleClass="Info" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold"   BorderRadius="9"></Button>
+
+        <Button Text="Ordenes de Sevicio" BorderColor="#1F2532" TextColor="White" BorderWidth="1" x:Name="BtnOS" StyleClass="Info" BackgroundColor="#3FBCEF" Font="16" FontAttributes="Bold"   BorderRadius="9" IsVisible="False"></Button>
+        <StackLayout >
+            <Image x:Name="imgAbajo" Source="DigitalClaimT.FondoMenu.PNG" VerticalOptions="EndAndExpand"  WidthRequest="250" HeightRequest="250"/>
+        </StackLayout>
+    </StackLayout>
+  
+</ContentPage>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<Toolbar
+		android:minHeight="?android:attr/actionBarSize"
+		android:background="?android:attr/colorPrimary"
+		android:minWidth="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/toolbar1">
+		<Button
+			android:text=""
+			android:drawableTop="@drawable/atras"
+			android:layout_width="40.0dp"
+			android:layout_height="40.0dp"
+			android:layout_gravity="left"
+			android:background="?android:attr/colorPrimary"
+			android:id="@+id/btnAtrasToolBar" />
+	</Toolbar>
+	<TextView
+			android:text="CONTACTO"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginBottom="80.0dp"
+			android:textColor="#ff3fbcef"
+			android:textAlignment="center"
+			android:gravity="center"
+			android:id="@+id/textView1" />
+	<TextView
+			android:text="Nombre y Apellido: "
+		    android:layout_marginBottom="12.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView2" />
+	<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:enabled="false"
+			android:focusable="false"
+			android:editable="false"
+			android:cursorVisible="false"
+			android:id="@+id/edtNombreyApellido"
+			android:layout_marginBottom="20.0dp"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:backgroundTint="#ff000000" />
+	<TextView
+			android:text="Teléfono: "
+		    android:layout_marginBottom="12.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView2" />
+	<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:enabled="false"
+			android:focusable="false"
+			android:editable="false"
+			android:cursorVisible="false"
+			android:id="@+id/edtTelefono"
+			android:layout_marginBottom="20.0dp"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:backgroundTint="#ff000000" />
+	<TextView
+			android:text="Email: "
+		    android:layout_marginBottom="12.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView2" />
+	<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:enabled="false"
+			android:focusable="false"
+			android:editable="false"
+			android:cursorVisible="false"
+			android:id="@+id/edtEmail"
+			android:layout_marginBottom="20.0dp"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:backgroundTint="#ff000000" />
+	<TextView
+			android:text="Mensaje: "
+		    android:layout_marginBottom="12.0dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			android:id="@+id/textView2" />
+	<EditText
+			android:layout_width="match_parent"
+			android:layout_height="45.0dp"
+			android:id="@+id/edtMensaje"
+			android:hint="Dejanos tu consulta"	
+			android:textColor="#000000"
+			android:layout_marginBottom="155.0dp"
+			android:layout_marginLeft="6.0dp"
+			android:layout_marginRight="6.0dp"
+			android:backgroundTint="#ff000000" />
+	<Button
+			android:text="Enviar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnEnviar"
+			android:textColor="#ffffff"
+			android:layout_marginBottom="1.0dp"
+			android:background="@drawable/boton_redondo"
+			android:layout_marginLeft="9.0dp"
+			android:layout_marginRight="9.0dp"/>
+</LinearLayout>

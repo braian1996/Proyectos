@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<Toolbar
+			android:minHeight="?android:attr/actionBarSize"
+			android:background="?android:attr/colorPrimary"
+			android:minWidth="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/toolbar12">
+			<Button
+				android:text=""
+				android:drawableTop="@drawable/atras"
+				android:layout_width="40.0dp"
+				android:layout_height="40.0dp"
+				android:layout_gravity="left"
+				android:background="?android:attr/colorPrimary"
+				android:id="@+id/btnAtrasToolBarPerfil" />
+		</Toolbar>
+		<TextView
+				android:text="DATOS PERSONALES"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_marginBottom="70.0dp"
+				android:textColor="#ff3fbcef"
+				android:textAlignment="center"
+				android:gravity="center"
+				android:id="@+id/textView1" />
+		<TextView
+				android:text="DNI: "
+				android:layout_marginBottom="12.0dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/textView2" />
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="45.0dp"
+				android:id="@+id/edtDniPerfil"
+				android:layout_marginBottom="20.0dp"
+				android:layout_marginLeft="6.0dp"
+				android:layout_marginRight="6.0dp"
+				android:backgroundTint="#ff000000" />
+		<TextView
+				android:text="USUARIO: "
+				android:layout_marginBottom="12.0dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/textView3" />
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="45.0dp"
+				android:id="@+id/edtUsernamePerfil"
+				android:layout_marginBottom="20.0dp"
+				android:layout_marginLeft="6.0dp"
+				android:layout_marginRight="6.0dp"
+				android:backgroundTint="#ff000000" />
+		<TextView
+				android:text="CONTRASEÑA: "
+				android:layout_marginBottom="12.0dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/textView4" />
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="45.0dp"
+				android:inputType="textPassword"
+				android:id="@+id/edtContraseñaPerfil"
+				android:layout_marginBottom="20.0dp"
+				android:layout_marginLeft="6.0dp"
+				android:layout_marginRight="6.0dp"
+				android:backgroundTint="#ff000000" />
+		<TextView
+				android:text="NOMBRE: "
+				android:layout_marginBottom="12.0dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/textView5" />
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="45.0dp"
+				android:id="@+id/edtNombrePerfil"
+				android:layout_marginBottom="20.0dp"
+				android:layout_marginLeft="6.0dp"
+				android:layout_marginRight="6.0dp"
+				android:backgroundTint="#ff000000" />
+		<TextView
+				android:text="APELLIDO: "
+				android:layout_marginBottom="12.0dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/textView3" />
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="45.0dp"
+				android:id="@+id/edtApellidoPerfil"
+				android:layout_marginBottom="20.0dp"
+				android:layout_marginLeft="6.0dp"
+				android:layout_marginRight="6.0dp"
+				android:backgroundTint="#ff000000" />
+		<TextView
+				android:text="TELEFONO: "
+				android:layout_marginBottom="12.0dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/textView6" />
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="45.0dp"
+				android:id="@+id/edtTelefonoPerfil"
+				android:layout_marginBottom="20.0dp"
+				android:layout_marginLeft="6.0dp"
+				android:layout_marginRight="6.0dp"
+				android:backgroundTint="#ff000000" />
+		<TextView
+				android:text="EMAIL: "
+				android:layout_marginBottom="12.0dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/textView3" />
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="45.0dp"
+				android:id="@+id/edtEmailPerfil"
+				android:layout_marginBottom="40.0dp"
+				android:layout_marginLeft="6.0dp"
+				android:layout_marginRight="6.0dp"
+				android:backgroundTint="#ff000000" />
+		<Button
+				android:text="Guardar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnGuardarDatosPersonales"
+				android:textColor="#ffffff"
+				android:background="@drawable/boton_redondo"
+				android:layout_marginLeft="9.0dp"
+				android:layout_marginBottom="1.0dp"
+				android:layout_marginRight="9.0dp"/>
+	</LinearLayout>
+</ScrollView>

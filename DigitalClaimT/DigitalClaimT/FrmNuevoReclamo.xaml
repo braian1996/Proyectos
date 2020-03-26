@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DigitalClaimT.FrmNuevoReclamo">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout BackgroundColor="#343a40" Padding="30,30,30,30">
+                <Label Text="Ingresá tu Reclamo" Font="Bold" Margin="8" FontSize="30" HorizontalOptions="Center" TextColor="White"/>
+            </StackLayout>
+            <StackLayout  >
+                <Label Text="AREA DE SERVICIO" FontSize="18"></Label>
+                <Picker Margin="0, 20, 0, 5" Title="Area de Servicio">
+                <Picker.Items>
+                    <x:String>Alcantarilla</x:String>
+                    <x:String>Bacheo</x:String>
+                </Picker.Items>
+            </Picker>
+                <Label Text="TIPO DE RECLAMO" FontSize="18"></Label>
+                <Picker Margin="0, 20, 0, 5" Title="Tipo de Servicio">
+                    <Picker.Items>
+                        <x:String>Barrido</x:String>
+                        <x:String>Cortada</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="OBSERVACIONES" FontSize="18"></Label>
+                <Entry Margin="0, 20, 0, 5" Placeholder="Detalle el Reclamo..." ></Entry>
+               
+            </StackLayout>
+                <Image x:Name="miFoto"></Image>
+            <Button Margin="22" Text="Subir Foto"  BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF" Clicked="BtnFoto_Clicked" x:Name="BtnFoto" StyleClass="Info"  Font="16" FontAttributes="Bold" BorderRadius="9" VerticalOptions="Center"></Button>
+            <Button Margin="22" Text="siguiente"  BorderColor="#1F2532" TextColor="White" BorderWidth="1" BackgroundColor="#3FBCEF" Clicked="BtnSiguiente_Clicked" x:Name="BtnSiguiente" StyleClass="Info"  Font="16" FontAttributes="Bold" BorderRadius="9" VerticalOptions="Center"></Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

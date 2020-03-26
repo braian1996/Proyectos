@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:text="DETALLE DEL RECLAMO"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView1"
+			android:layout_marginBottom="100.0dp"
+			android:textAlignment="center"
+			android:textColor="#ff3fbcef"
+			android:textColorHint="#ff263238"
+			android:shadowColor="#ff304ffe"
+			android:gravity="center"/>
+			<ListView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="200.0dp"
+				android:id="@+id/listViewHistorialReclamo" />
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<TextView
+				android:text="Antes:"
+				android:textStyle="bold"
+				android:layout_marginLeft="15.0dp"
+				android:layout_width="200.0dp"
+				android:layout_height="wrap_content"
+				android:visibility="invisible"
+				android:textColor="#000000"
+				android:id="@+id/tvAntesRec" 
+				android:layout_marginTop="9.0dp" />
+			<TextView
+				android:text="Despues:"
+				android:textStyle="bold"
+				android:visibility="invisible"
+				android:layout_marginLeft="9.0dp"
+				android:layout_width="120.0dp"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/tvDespuesAu" 
+				android:layout_marginTop="9.0dp" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<ImageView
+				android:layout_width="200.0dp"
+				android:layout_marginRight="10.0dp"
+				android:layout_height="200.0dp"
+				android:id="@+id/imageViewReclamo" />
+			<ImageView
+				android:layout_width="200.0dp"
+				android:layout_height="200.0dp"
+				android:id="@+id/imageViewAuditoria" />
+		</LinearLayout>
+			<TextView
+				android:text=""
+				android:textStyle="bold"
+				android:layout_marginLeft="220.0dp"
+				android:layout_width="200.0dp"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/tvFechaAuditoria" 
+				android:layout_marginTop="9.0dp" />
+			<TextView
+				android:text=""
+				android:textStyle="bold"
+				android:layout_marginLeft="220.0dp"
+				android:layout_width="200.0dp"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:id="@+id/tvObservacionAuditoria" 
+				android:layout_marginTop="10.0dp" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<Button
+				android:text=""
+				android:layout_width="match_parent"
+				android:enabled="false"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnCalificarReclamo"
+				android:textColor="#ffffffff"
+				android:layout_marginLeft="10.0dp"
+				android:layout_marginRight="10.0dp"
+				android:background="@drawable/boton_redondo"
+				android:layout_marginTop="30.0dp" />
+		</LinearLayout>
+	</LinearLayout>
